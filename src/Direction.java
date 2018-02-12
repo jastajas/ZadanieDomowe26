@@ -16,18 +16,8 @@ public enum Direction {
     }
 
     public static Direction convert(int num){
-        switch (num){
-            case 0:
-                return NORTH;
-            case 1:
-                return EAST;
-            case 2:
-                return SOUTH;
-            case 3:
-                return WEST;
-            default:
-                return UNDEFINED;
-        }
+        Direction[] dir = Direction.values();
+        return dir[num];
     }
 
     @Override
